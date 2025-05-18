@@ -1,0 +1,443 @@
+.apt-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+ 
+.apt-nav{
+    color:$navyblue;
+    font-weight: bold;
+    margin-top: 24px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 8vh;
+   
+    ul{
+        display: flex;
+        justify-content: space-between;
+        background-color: $navyblue;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      
+      
+   
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: white;
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 33.15%;
+        .apt-stepname{
+            white-space: nowrap; 
+        }
+        .apt-stepnum{
+            color: white;
+            background-color: $navyblue;
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 100px;
+        }
+    }
+}
+
+.apt-main{
+    background-color: white;
+    width: 90%;
+    margin-top: 24px;
+    padding: 20px;
+    display: flex;
+    aside{
+        background-color: $navyblue;
+        margin-top: 108px;
+        color: white;
+        width: 25%;
+        text-align: center;
+       
+    }
+
+    .apt-selection{
+        height: 40vh;
+        .selection-btn{
+            display: flex;
+            
+            align-items: center;
+            gap: 12px;
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+    }
+    .apt-summary{
+        height: 20vh;
+        font-size: 12px;
+        border: 2px $navyblue solid;
+        padding: 8px;
+    }
+    .services-wrap{
+        width: 100%;
+      
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+       
+        align-items: center;
+        margin-top: 12px;
+        .service-title{
+            width: 90%;
+          
+            
+            text-align: center;
+        }
+        ul{
+       
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            gap: 10%;
+            padding: 0;
+            margin-bottom: 32px;
+            li{
+                padding: 8px;
+            }
+        }
+        .clinic-service{
+            background-color: $light-blue;
+            padding: 22px;
+            margin-bottom: 32px;
+            p{
+                width: 70%;
+            }
+        
+        }
+        .services-choose{
+            .service-book{
+                display: flex;
+                
+         
+                gap: 5%;
+              
+            }
+            p{
+                margin-top: 10px;
+                color: $navyblue;
+            }
+        }
+        .apt-notes-wrap{
+            margin-top: 32px;
+            textarea{
+                width: 50%;
+                height: 20vh;
+            }
+            
+        }
+    }
+    
+    
+}
+
+.apt-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-btns{
+    padding: 32px;
+    .nav-btn{
+        margin: 10px;
+    }
+}
+
+}
+.select-doctor{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top:20px;
+    margin-bottom: 60px;
+    .doctor-selection{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.select-date{
+    display: flex;
+    .select-time{
+
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+        .radio{
+
+            display: flex;
+            gap: 10px;
+            label{
+                background-color:$navyblue;
+                width: 200px;
+                height: 30px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                color: white;
+                padding-left: 20px;
+
+            }
+        }
+    }
+}
+
+//patient infor step 2
+.information-main{
+    width: 100%;
+}
+.patient-info {
+    font-family: Arial, sans-serif;
+    margin:auto;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 80%;
+    gap: 5%;
+    .patient-details{
+        width: 50%;
+    }
+    .emergency-contact-details{
+        width: 50%;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+  
+    h4 {
+      font-size: 1.2rem;
+      margin-top: 25px;
+      color: #444;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #555;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      box-sizing: border-box;
+  
+      &:focus {
+        border-color: #4CAF50;
+        outline: none;
+      }
+    }
+  
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"] {
+      font-family: inherit;
+      font-size: 1rem;
+    }
+  }
+  
+//confirmation
+.confirmation-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .appointment-details,
+  .patient-info-summary,
+  .emergency-contact-info,
+  .reminders {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  .reminders ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .reminders li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .complete-appointment-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+  
+//nav
+.hidden {
+    display: none;
+    background-color: #007bff;
+}
+  
+  .apt-nav li.active .apt-stepnum {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+
+//popup
+// Popup Overlay
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+// Popup Content
+.popup-content {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333333;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    color: #555555;
+  }
+
+  button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    }
+  }
+}
+
+// Keyframe Animation for Fade-In Effect
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.medical-certificate {
+  display: flex;
+  align-items: center;
+  background-color: #011E48; // Dark blue background
+  padding: 10px 15px;
+  border-radius: 5px; // Rounded corners
+  margin-top: 20px;
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; // White text color
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+
+
+    input[type="checkbox"] {
+      width: 100px;
+      margin-top: 15px;
+      transform: scale(1.2); // Larger checkbox
+      accent-color: #ffffff; // White checkbox color
+    }
+  }
+}
+

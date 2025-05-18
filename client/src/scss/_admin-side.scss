@@ -1,0 +1,47 @@
+.admin-sidebar{
+    width: 20vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    color: white;
+    background-color: $light-blue;
+    h2{
+        font-size: 28px;
+        padding-bottom: 20px;
+
+    }
+
+    .logo{
+        width: 200px;
+    }
+    .sidebar-navigation{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: start;
+        align-items: start;
+        padding-left: 10%;
+        gap: 10px;
+        background-color: $light-blue;
+        color: $navyblue;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin: 0px;
+            padding: 0;
+            width: 100%;
+          
+            li{
+                margin: 0;
+                width: 50%;
+                padding: 0;
+                text-align: start;
+                list-style: none;
+            }
+        }
+
+    }
+    
+}

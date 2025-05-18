@@ -1,0 +1,19 @@
+.navBar{
+    
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+
+
+    .navItm{
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+
+    }
+
+    .navItm:hover{
+        background-color: rgb(42, 70, 131);
+        transition-duration: 300ms;
+    }
+}

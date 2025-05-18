@@ -1,0 +1,96 @@
+.header-g{
+
+    width: 100%;
+    height: 12vh;
+    background-image: url('/src/assets/header_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+
+        height: 15vh;
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .logo:hover
+    {
+        filter: brightness(150%);
+        transition-duration: 300ms;
+    }
+
+    .entry-btn{
+
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        gap: 30px;
+        .login-btn{
+            width: 125px;
+            height: max-content;
+            text-wrap: wrap;
+            padding: 5px;
+        }
+        .signup-btn{
+            width: 100px;
+            height: 30px;
+        }
+        button{
+            
+            background-color:$navyblue;
+            border-radius: 5px;
+            border: none;
+        }
+        button:hover{
+            background-color: $accent-color;
+            color: $navyblue;
+            transition: 300ms;
+        }
+        .link-btn{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+nav{
+    height: 8vh;
+    width: 100%;
+    background-color: $navyblue;
+    border-bottom: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+       
+
+        li{
+            list-style-type: none;
+            width: 8%;
+  
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

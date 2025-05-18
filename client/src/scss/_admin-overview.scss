@@ -1,0 +1,542 @@
+.admin-overview{
+    display: flex;
+    .overview-main{
+        background-color: white;
+        width: 80vw;
+        padding: 3%;
+        gap: 30px;
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+
+            width: 50%;
+            
+      
+            .search-field {
+              flex-grow: 1;
+              padding: 10px;
+              font-size: 16px;
+              border: 1px solid #ccc;
+              border-radius: 20px;
+      
+              &:focus {
+                border-color: #011E48;
+                outline: none;
+                box-shadow: 0 0 5px rgba(1, 30, 72, 0.5);
+              }
+            }
+      
+            .search-btn {
+              padding: 10px 20px;
+              font-size: 16px;
+              background-color: #011E48;
+              color: #ffffff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+      
+              &:hover {
+                background-color: $light-blue;
+                color: #011E48;
+                font-weight: bold;
+              }
+            }
+        }
+        .overview-header{
+            
+            display: flex;
+            align-items: center;
+            gap:10px;
+            img{
+                width: 62px;
+
+            }
+            
+        }
+        .admin-nav{
+            background-color: $light-blue;
+            color: $navyblue;
+            margin-top: 30px;
+            font-weight: bold;
+            
+        }
+
+    }
+}
+
+//time selector
+.appointment-time-picker {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .appointment-label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  
+    .appointment-dropdown {
+      padding: 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f8f8f8;
+      transition: border-color 0.3s;
+  
+      &:hover {
+        border-color: #4caf50;
+      }
+  
+      &:focus {
+        outline: none;
+        border-color: #388e3c;
+        box-shadow: 0 0 3px #388e3c;
+      }
+    }
+  
+    .appointment-selected-time {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #444;
+    }
+  }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    
+    .records-container {
+        margin-bottom: 2rem;
+    }
+}
+
+//manage
+.manage {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  header.edit-apt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 1rem;
+      border-radius: 50%;
+      background-color: #ccc;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      color: #444;
+    }
+  }
+
+  .search-patient {
+    margin-bottom: 2rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      a {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .edit-slot {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+          color: #555;
+        }
+
+        input[type="number"] {
+          width: 60px;
+          padding: 0.4rem;
+          font-size: 1rem;
+          text-align: center;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+
+          &:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+          }
+        }
+      }
+    }
+  }
+}
+.search-patient {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  label {
+    font-weight: bold;
+  }
+
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .search-btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+.patients {
+  .patient-found {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    margin-top: 1rem;
+ 
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+
+  select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    border: 1px solid #ccc;
+  }
+}
+
+.records-container {
+  background: #FFFFFF;
+  border: 1px solid #d4d2d2;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 2px 4px rgba(66, 66, 66, 0.2);
+  
+  .section-header {
+    h2 {
+      color: #011E48;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .records-section {
+    margin-bottom: 2rem;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    h2 {
+      padding: 1rem;
+      background-color: #011E48;
+      color: white;
+      font-size: 1.125rem;
+      font-weight: 500;
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+    
+    .table-container {
+      border: 1px solid #e5e7eb;
+      border-top: none;
+      border-radius: 0 0 0.5rem 0.5rem;
+      overflow: hidden;
+      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        
+        th, td {
+          padding: 0.75rem;
+          text-align: left;
+          border-bottom: 1px solid #e5e7eb;
+          vertical-align: middle;
+          text-align: center;
+        }
+        
+        th {
+          background-color: #f8fafc;
+          color: #64748b;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+        
+        td {
+          color: #4b5563;
+          font-size: 0.875rem;
+          
+          .view-appointment-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #011E48;
+            color: white;
+            border: none;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            
+            &:hover {
+              background-color: #1e40af;
+              transform: translateY(-1px);
+            }
+            
+            .icon {
+              width: 1rem;
+              height: 1rem;
+            }
+          }
+        }
+        
+        tbody tr:hover {
+          background-color: #f8fafc;
+        }
+      }
+    }
+  }
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  &.scheduled {
+    background-color: #e5f2ff;
+    color: #011E48;
+  }
+  
+  &.completed {
+    background-color: #dcfce7;
+    color: #166534;
+  }
+  
+  &.cancelled {
+    background-color: #fee2e2;
+    color: #991b1b;
+  }
+  
+  &.pending {
+    background-color: #fff3e0;
+    color: #ed6c02;
+  }
+}
+
+.queue-number, .wait-time {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: #e5f2ff;
+  color: #011E48;
+}
+
+.schedule-container {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 0 0 0.5rem 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+
+  .calendar-wrapper {
+    flex: 0 0 auto;
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .time-selection {
+    flex: 1;
+    
+    .date-time-info {
+      background: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+      .selected-date {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #011E48;
+        margin-bottom: 1.5rem;
+      }
+
+      .appointment-time-picker {
+        margin-bottom: 1.5rem;
+
+        .appointment-label {
+          display: block;
+          margin-bottom: 0.5rem;
+          color: #4b5563;
+          font-weight: 500;
+        }
+
+        .appointment-dropdown {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid #e5e7eb;
+          border-radius: 0.5rem;
+          background-color: white;
+          color: #4b5563;
+          font-size: 0.875rem;
+          transition: all 0.2s;
+
+          &:focus {
+            outline: none;
+            border-color: #011E48;
+            box-shadow: 0 0 0 2px rgba(1, 30, 72, 0.1);
+          }
+        }
+      }
+
+      .remaining-slots {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #4b5563;
+        font-weight: 500;
+
+        .slot-count {
+          padding: 0.25rem 0.75rem;
+          background-color: #e5f2ff;
+          color: #011E48;
+          border-radius: 9999px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.edit-apt{
+
+  display: flex;
+  gap: 20px;
+  img{
+    width: 32px;
+    height: 32px;
+  }
+  align-items: center;
+  vertical-align: middle;
+  margin-bottom: 30px;
+  h2{
+
+    padding-top: 10px;
+  }
+}
+  

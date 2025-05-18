@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    margin: 0;
+    font-family: "Montserrat";
+  }
+
+
+
+  @import "config";
+  @import "index";
+  @import "header";
+
+  @import "footer";
+  @import "main";
+  @import "clinic-card";
+  @import "clinic-apt";
+  @import "header-p";
+  @import "login";
+  @import "navbar";
+  @import "manage-profile";
+  @import "recordandhistory";
+  @import "emed";
+  @import "admin-side";
+  @import "admin-overview";
+  @import "about";
+
+  
+  //FONT IMPORTS
+  @import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';  
+ 

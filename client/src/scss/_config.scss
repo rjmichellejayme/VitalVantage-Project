@@ -1,0 +1,24 @@
+$navyblue: #011E48;
+$primary-dark:#000000;
+$secondary-color: #0505B6;
+$light-blue:#C9E8FD;
+$accent-color:#5BB7BB;
+$norwester: 'Norwester', sans-serif;
+$bigtext: "Roboto", sans-serif;
+$bodytext:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+.book-btn, .nav-btn {
+  background-color: $navyblue;
+  color: white;
+  width: 120px;
+  height: 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; }
+
+.book-btn:hover, .nav-btn:hover {
+  background-color: $accent-color;
+}
+

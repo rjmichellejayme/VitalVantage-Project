@@ -1,0 +1,74 @@
+.clinic-card-wrap{
+
+    background-color:white;
+    width: 17vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: $navyblue;
+    padding: 3vh 1.5vw;
+    gap: 3%;
+
+    .clinic-img{
+        width: auto;
+        max-width: 10vw;
+    }
+    .clinicTitle{
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        background-color: $navyblue;
+        text-align: center;
+    }
+    .clinic-title{
+        
+        color: white;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 3vh;
+    } 
+    .clinic-services{
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh;
+        h1{
+            font-size: 3vh;
+        }
+        h5{
+            font-size: 2vh;
+        }
+    }
+    .book-btn{
+        width: 7vw;
+        height: auto;
+        padding: 1vh 0.5vw;
+        background-color: $navyblue;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.9vh;
+    }
+    // .book-btn-link{
+    //     text-decoration: none;
+    //     color: white;
+    // }
+    .book-btn:hover{
+        background-color: cornflowerblue;
+        transition-duration: 300ms;
+    }
+    
+}
+
+.clinic-card-wrap:hover
+{
+  background-color: lightgray;
+  transition: 500ms;
+}

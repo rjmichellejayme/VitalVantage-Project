@@ -1,0 +1,47 @@
+footer{
+    background-color: $navyblue;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    .footer-title{
+        display: flex;
+        gap: 2%;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      
+        width: 20%;
+        
+    }
+    .legal-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 20%;
+        
+        .footer-content{
+            display: flex;
+            flex-direction: column;
+        }
+      
+
+    }
+    .copyright{
+        gap: 4px;
+        width: 20%;
+        margin-top: -2%;
+    
+      
+
+
+    }
+   
+}
